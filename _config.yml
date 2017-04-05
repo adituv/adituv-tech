@@ -1,4 +1,4 @@
-title:            Blog Title
+title:            AdituV - Student, Programmer, GH3 Modder
 description:      Describe your website here.
 
 # put your disqus here
@@ -10,7 +10,7 @@ excerpt_separator: <!--more-->
 # Your site's domain goes here (eg: //mmistakes.github.io, http://mademistakes.com, etc)
 # When testing locally leave blank or use http://localhost:4000
 
-url: http://aronbordin.com/neo-hpstr-jekyll-theme
+url: http://localhost:4000
 
 # draw your top menu here
 # each item must have a title and a url.
@@ -39,15 +39,18 @@ menu:
 
 # Owner/author information
 owner:
-  name:           Your name
-  site:           http://aronbordin.com
+  name:           Iris Ward (AdituV)
+  site:           http://adituv.tech
   avatar:         images/avatar.jpg
-  bio:            "Your bio goes here. It shouldn't be super long but a good two sentences or two should suffice."
-  email:          you@email.com
+  bio:            >
+                  Iris is a computer science student who will be going into her final undergraduate
+                  year in October 2017.  Her current hobby is (predictably) Guitar Hero modding, in
+                  which she specialises in scripting.
+  email: aditu.venyhandottir@gmail.com
   # Twitter nick for use in Twitter cards and follow button.
-  twitter: aron_bordin # if no twitter in this config, the twitter follow button will be removed
+  twitter: Aditu_V # if no twitter in this config, the twitter follow button will be removed
   # GitHub nick for use in follow button in author block.
-  github: aron-bordin
+  github: adituv
 
 # Twitter account associated with the site if different from owner/author twitter account.
 # Used in Twitter cards.
@@ -56,24 +59,16 @@ twitter:
 # Social networking links used in author block underneath posts. Update and remove as you like.
 social:
   - title: "github"
-    url: "https://github.com/aron-bordin"
-  - title: "linkedin"
-    url: "https://br.linkedin.com/in/aronbordin"
+    url: "https://github.com/adituv"
   - title: "youtube"
-    url: "https://www.youtube.com/channel/UCfnSek-9HPWOx5e2pH7VFgg"
+    url: "https://www.youtube.com/channel/UCCjrfre3a3ERaUbpSXhCIuw"
 
 # Background image to be tiled on all pages
 background:
 
-# Analytics and webmaster tools stuff goes here
-google_analytics:
-google_verify:
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:
-
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
-locale:      en_US
+timezone:    Europe/London
+locale:      en_GB
 future:      true
 highlighter: rouge
 markdown:    kramdown
