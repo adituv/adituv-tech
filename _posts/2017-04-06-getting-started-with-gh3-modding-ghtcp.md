@@ -1,17 +1,18 @@
 ---
 layout: post
-title: Getting Started with GH3 Modding: GHTCP
+title: 'Getting Started with GH3 Modding, Part 1'
 description: A complete-basics tutorial on GHTCP's Texture Explorer
 modified: 2017-04-07
-categories: [guitarhero, modding, tutorials]
-tags: [guitarhero, tutorials, ghtcp, modding]
+categories: [tutorials]
+tags: [guitarhero, tutorials, ghtcp, modding, textures]
 image:
     feature: modding-feature.jpg
 ---
 
-This tutorial is
-for some simple game tweaks, including texture replacement.  If you are already
-comfortable with these things, you may want to skip this tutorial.
+This tutorial covers using Texture Explorer within GHTCP to make texture
+replacements, and the details of the FX Speed Boost option.  It is intended as
+a guide for beginners to modding; if you are already familiar with Texture
+Explorer, you may want to skip this tutorial.
 
 <!--more-->
 
@@ -68,7 +69,7 @@ bugs to do with transparency and dds file conversion.
 ### FX Speed Boost
 
 For the "FX Speed Boost" option, there is not so much to say.  The option edits
-your `qb.pak.xen` file (more on this in the [Queen Bee](#queen-bee) section) to
+your `qb.pak.xen` file (more on this in [Part 2: Queen Bee][queen-bee]) to
 replace some scripts that create visual effects with scripts that do nothing.
 This is supposed to speed up your game a little by reducing the effects on
 screen, but as most modern computers can run Guitar Hero 3 at several hundred
@@ -96,3 +97,4 @@ using the option at all, instead making the changes in Queen Bee directly, or
 using my Extra Settings mod which provides all these options and a few more.
 
 [ghtcp]: https://drive.google.com/open?id=0B1I-tX15pao5cXQtTDlYcUxHbTQ
+[queen-bee]: /tutorials/getting-started-with-gh3-modding-queen-bee
