@@ -1,27 +1,28 @@
 ---
 layout: post
-title: Getting Started with GH3 Modding
-description: A complete-basics tutorial on the modding tools available for Guitar Hero 3 and how to use them.
-modified: 2017-04-06
-categories: [guitarhero, tutorials]
-tags: [guitarhero, tutorials, queenbee, ghtcp, modding]
+title: Getting Started with GH3 Modding: GHTCP
+description: A complete-basics tutorial on GHTCP's Texture Explorer
+modified: 2017-04-07
+categories: [guitarhero, modding, tutorials]
+tags: [guitarhero, tutorials, ghtcp, modding]
 image:
     feature: modding-feature.jpg
 ---
 
-This tutorial will walk you through using [GHTCP](#ghtcp) and [Queen Bee](#qb)
+This tutorial is
 for some simple game tweaks, including texture replacement.  If you are already
 comfortable with these things, you may want to skip this tutorial.
 
-<!-- more -->
+<!--more-->
 
 ## GHTCP
 
-**Guitar Hero Three Control Panel** is a program by MaXKilleR for managing custom
-songs and setlists in Guitar Hero.  I won't be covering how to use it to do that
-here though; there are plenty of tutorials out there already.  A later post
-will cover how it handles custom songs and setlists.  The two things I will
-cover here are the Texture Explorer, and the "FX Speed Boost" option.
+**Guitar Hero Three Control Panel** ([download][ghtcp]) is a program by MaXKilleR
+for managing custom songs and setlists in Guitar Hero.  I won't be covering how
+to use it to do that here though; there are plenty of tutorials out there
+already.  A later post will cover how it handles custom songs and setlists.  The
+two things I will cover here are the Texture Explorer, and the "FX Speed Boost"
+option.
 
 ### Texture Explorer
 
@@ -46,6 +47,9 @@ containing textures.  Some files are an individual texture and some are a
 container with multiple textures inside them.  Double-click a file to load it,
 then click one of the "Image X" entries in the next column to view the image.
 
+Other than the fretboards, the vast majority of useful textures are in the ZONES
+folder, particularly in `global_gfx.tex`.
+
 {% capture images %}
   {{ site.url }}/assets/images/posts/texture-explorer-2.png
   {{ site.url }}/assets/images/posts/texture-explorer-3.png
@@ -61,5 +65,34 @@ bugs to do with transparency and dds file conversion.
 [^1]: There is a method using a custom dll file for GH3+, but that is far beyond
       the scope of this tutorial.
 
+### FX Speed Boost
+
+For the "FX Speed Boost" option, there is not so much to say.  The option edits
+your `qb.pak.xen` file (more on this in the [Queen Bee](#queen-bee) section) to
+replace some scripts that create visual effects with scripts that do nothing.
+This is supposed to speed up your game a little by reducing the effects on
+screen, but as most modern computers can run Guitar Hero 3 at several hundred
+fps it is mostly just for personal choice.
+
+The scripts it replaces are:
+
+`do_starpower_stagefx`
+: removing the heart and bat animations, etc, when you have star power active
+
+`first_gem_fx`
+: removing the shine accompanying the first note of a chart
+
+`hit_note_fx`
+: removing hit flame animations and most spark particles
+
+`guitarevent_multiplier4xon_spawned`
+: removing the flames around the character's hands when the multipilier is 4x
+
+`guitarevent_starsequencebonus`
+: removing the star particles and lightning on completing a star power phrase
+
+As FX Speed Boost doesn't allow choosing only some of these, I recommend not
+using the option at all, instead making the changes in Queen Bee directly, or
+using my Extra Settings mod which provides all these options and a few more.
+
 [ghtcp]: https://drive.google.com/open?id=0B1I-tX15pao5cXQtTDlYcUxHbTQ
-[queenbee]: https://drive.google.com/open?id=0B1I-tX15pao5a2RFd00wcUtZZ00
