@@ -1,12 +1,12 @@
 title:            AdituV.tech
-description:      AdituV - Student, Programmer, GH3 Modder
+description:      AdituV.tech - GH3 Mods and Tutorials
 
 # put your disqus here
 disqus_shortname:
 reading_time:     true # if true, shows the estimated reading time for a post
-words_per_minute: 200
+words_per_minute: 100
 logo:             images/logo.png # logo visible in the topbar
-excerpt_separator: <!--more-->
+excerpt_separator: '<!--more-->'
 # Your site's domain goes here (eg: //mmistakes.github.io, http://mademistakes.com, etc)
 # When testing locally leave blank or use http://localhost:4000
 
@@ -20,22 +20,15 @@ url: "http://adituv.tech"
 menu:
   - title: 'Home'
     url: '/'
-  - title: 'Fork'
-    url: 'http://github.com/aron-bordin/neo-hpstr-jekyll-theme'
-  - title: 'Install'
-    url: 'http://github.com/aron-bordin/neo-hpstr-jekyll-theme#installation'
+  - title: 'Mods'
+    url: '/mods'
+  - title: 'Tutorials'
+    url: '/tutorials'
   - title: 'Tags'
     url: '/tags'
   - title: 'Categories'
     url: '/categories'
     type: 'categories'
-  - title: 'Favorites'
-    url: '#'
-    submenu:
-      - title: 'Code Highlighter'
-        url: '/intro/code-highlighting-post/'
-      - title: 'Sample Post'
-        url: '/intro/sample-post/'
 
 # Owner/author information
 owner:
@@ -51,10 +44,6 @@ owner:
   twitter: Aditu_V # if no twitter in this config, the twitter follow button will be removed
   # GitHub nick for use in follow button in author block.
   github: adituv
-
-# Twitter account associated with the site if different from owner/author twitter account.
-# Used in Twitter cards.
-twitter:
 
 # Social networking links used in author block underneath posts. Update and remove as you like.
 social:
